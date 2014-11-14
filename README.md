@@ -17,6 +17,7 @@ http://www.cs.utah.edu/~aek/code/init.el.html
 Following codes were added to enable cscope feature in original init.el:
 
 ;; Cscope
+
 ;; ------                                                                                                              
 ;; Added cscope feature. Emacs need to load xcscope.el file                                                            
 ;; which is program to interface to the cscope feature, and we                                                         
