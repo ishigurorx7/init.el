@@ -24,11 +24,8 @@ Following codes were added to enable cscope feature in original init.el:
 ;; "/usr/share/emacs/site-lisp/xcscope/xcscope.el"                                                                     
 ;;                                                                                                                          
 (load-file "/usr/share/emacs/site-lisp/xcscope/xcscope.el")
-
 (require 'xcscope)
-
 (setq cscope-do-not-update-database t)
-
 (add-hook 'asm-mode-hook (function cscope:hook))
 
 Tested env
