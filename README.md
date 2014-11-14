@@ -1,7 +1,7 @@
 init.el
 =======
 
-GNU Emacs setup file + cscope feature.
+GNU Emacs setup file for cscope feature.
 
 Introduction
 =========
@@ -16,16 +16,13 @@ http://www.cs.utah.edu/~aek/code/init.el.html
 
 Following codes were added to enable cscope feature in original init.el:
 
-;; Cscope                                                                                                                   
-;; ------                                                                                                                   
-;; Added cscope feature. Emacs need to load xcscope.el file                                                                 
-;; which is program to interface to the cscope feature, and we                                                              
-;; assumes that the file is located on the following place:                                                                 
-;; "/usr/share/emacs/site-lisp/xcscope/xcscope.el"                                                                          
-;;                                                                                                                          
+;; Cscope                                                                                                              ;; ------                                                                                                              ;; Added cscope feature. Emacs need to load xcscope.el file                                                            ;; which is program to interface to the cscope feature, and we                                                         ;; assumes that the file is located on the following place:                                                            ;; "/usr/share/emacs/site-lisp/xcscope/xcscope.el"                                                                     ;;                                                                                                                          
 (load-file "/usr/share/emacs/site-lisp/xcscope/xcscope.el")
+
 (require 'xcscope)
+
 (setq cscope-do-not-update-database t)
+
 (add-hook 'asm-mode-hook (function cscope:hook))
 
 Tested env
